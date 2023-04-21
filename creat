@@ -1,0 +1,13 @@
+@@ -6,6 +6,8 @@
+from codegen.code import CodeWriter, CodeBlock
+import operator
+import json
+import os
+import six
+
+
+instruction_set = read_instruction_set()
+@@ -69,13 +71,13 @@ def generate_operand(operand):
+\n\
+instruction_list = []\n\
+", file=out)
